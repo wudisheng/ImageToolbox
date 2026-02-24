@@ -29,7 +29,7 @@ jobs:
           sudo apt update -y || true
           sudo apt install -y --no-install-recommends coreutils
           mkdir -p $RUNNER_TEMP/keystores
-          echo "${{ secrets.SIGNING_KEY }}" | base64 --decode > $RUNNER_TEMP/keystores/keystore.jks
+          echo "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" | base64 --decode > $RUNNER_TEMP/keystores/keystore.jks
 
       - name: Build FOSS APKs
         run: bash ./gradlew assembleFossRelease
@@ -40,9 +40,9 @@ jobs:
           for apk in app/build/outputs/apk/foss/release/*.apk; do
             $ANDROID_SDK_PATH sign \
               --ks $RUNNER_TEMP/keystores/keystore.jks \
-              --ks-key-alias ${{ secrets.ALIAS }} \
-              --ks-pass pass:${{ secrets.KEY_STORE_PASS }} \
-              --key-pass pass:${{ secrets.KEY_STORE_PASS }} \
+              --ks-key-alias simple \
+              --ks-pass pass:simple \
+              --key-pass pass:simple \
               --out "$apk" \
               "$apk"
           done
@@ -65,9 +65,9 @@ jobs:
           for apk in app/build/outputs/apk/market/release/*.apk; do
             $ANDROID_SDK_PATH sign \
               --ks $RUNNER_TEMP/keystores/keystore.jks \
-              --ks-key-alias ${{ secrets.ALIAS }} \
-              --ks-pass pass:${{ secrets.KEY_STORE_PASS }} \
-              --key-pass pass:${{ secrets.KEY_STORE_PASS }} \
+              --ks-key-alias simple \
+              --ks-pass pass:simple \
+              --key-pass pass:simple \
               --out "$apk" \
               "$apk"
           done

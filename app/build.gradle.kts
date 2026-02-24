@@ -33,7 +33,7 @@ android {
         vectorDrawables.useSupportLibrary = true
 
         //Maintained for compatibility with old version
-        applicationId = "ru.tech.imageresizershrinker"
+        applicationId = "ru.tech.imageresizershrinker.rename01"
 
         versionCode = libs.versions.versionCode.get().toIntOrNull()
         versionName = System.getenv("VERSION_NAME") ?: libs.versions.versionName.get()
@@ -68,7 +68,7 @@ android {
     buildTypes {
         debug {
             applicationIdSuffix = ".debug"
-            resValue("string", "app_launcher_name", "Image Toolbox DEBUG")
+            resValue("string", "app_launcher_name", "Image Toolbox R1 DEBUG")
             resValue("string", "file_provider", "com.t8rin.imagetoolbox.fileprovider.debug")
         }
         release {
@@ -78,7 +78,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            resValue("string", "app_launcher_name", "Image Toolbox")
+            resValue("string", "app_launcher_name", "Image Toolbox R1")
             resValue("string", "file_provider", "com.t8rin.imagetoolbox.fileprovider")
         }
         create("benchmark") {
