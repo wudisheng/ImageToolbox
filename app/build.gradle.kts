@@ -69,7 +69,7 @@ android {
         debug {
             applicationIdSuffix = ".debug"
             resValue("string", "app_launcher_name", "Image Toolbox R1 DEBUG")
-            resValue("string", "file_provider", "com.t8rin.imagetoolbox.fileprovider.debug")
+            resValue("string", "file_provider", "com.t8rin.imagetoolbox.fileprovider.rename01.debug")
         }
         release {
             isMinifyEnabled = true
@@ -79,7 +79,7 @@ android {
                 "proguard-rules.pro"
             )
             resValue("string", "app_launcher_name", "Image Toolbox R1")
-            resValue("string", "file_provider", "com.t8rin.imagetoolbox.fileprovider")
+            resValue("string", "file_provider", "com.t8rin.imagetoolbox.fileprovider.rename01")
         }
         create("benchmark") {
             initWith(buildTypes.getByName("release"))
